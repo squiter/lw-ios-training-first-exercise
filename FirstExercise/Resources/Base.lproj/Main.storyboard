@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivo-Hh-qyT">
+                                <rect key="frame" x="304" y="28" width="288" height="278"/>
+                                <color key="backgroundColor" red="1" green="0.9119690217175731" blue="0.24844286647027136" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ivo-Hh-qyT" secondAttribute="height" multiplier="285:263" id="EPI-t3-toL"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EPI-t3-toL"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQF-8a-kfe">
+                                <rect key="frame" x="8" y="314" width="288" height="278"/>
+                                <color key="backgroundColor" red="0.28690340502265266" green="1" blue="0.30011515340416317" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fQF-8a-kfe" secondAttribute="height" multiplier="251:281" id="WGq-T3-R6n"/>
+                                    <constraint firstAttribute="width" secondItem="fQF-8a-kfe" secondAttribute="height" multiplier="251:281" id="xAr-kz-SsE"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WGq-T3-R6n"/>
+                                        <exclude reference="xAr-kz-SsE"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-dB-yrt">
+                                <rect key="frame" x="304" y="314" width="288" height="278"/>
+                                <color key="backgroundColor" red="0.37310006575910282" green="0.2825712933962401" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xNB-dB-yrt" secondAttribute="height" multiplier="285:281" id="dbH-vE-i5O"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dbH-vE-i5O"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hf2-BU-4Kq">
+                                <rect key="frame" x="8" y="28" width="288" height="278"/>
+                                <color key="backgroundColor" red="1" green="0.15627827740360389" blue="0.85313466682182559" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xNB-dB-yrt" firstAttribute="width" secondItem="Hf2-BU-4Kq" secondAttribute="width" id="4Vp-qY-Smw"/>
+                            <constraint firstAttribute="trailing" secondItem="Ivo-Hh-qyT" secondAttribute="trailing" constant="8" id="66C-mo-WA9"/>
+                            <constraint firstItem="fQF-8a-kfe" firstAttribute="top" secondItem="Hf2-BU-4Kq" secondAttribute="bottom" constant="8" id="6Me-Nq-gRG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xNB-dB-yrt" secondAttribute="bottom" constant="8" id="7nx-Ot-XBR"/>
+                            <constraint firstItem="fQF-8a-kfe" firstAttribute="width" secondItem="Hf2-BU-4Kq" secondAttribute="width" id="8Fq-jb-uqG"/>
+                            <constraint firstItem="Ivo-Hh-qyT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="8m2-1E-JBu"/>
+                            <constraint firstAttribute="trailing" secondItem="xNB-dB-yrt" secondAttribute="trailing" constant="8" id="C2w-Pb-ItB"/>
+                            <constraint firstItem="Ivo-Hh-qyT" firstAttribute="height" secondItem="Hf2-BU-4Kq" secondAttribute="height" id="F2T-1R-sZW"/>
+                            <constraint firstItem="xNB-dB-yrt" firstAttribute="leading" secondItem="fQF-8a-kfe" secondAttribute="trailing" constant="8" id="PeO-lM-Xs4"/>
+                            <constraint firstItem="Ivo-Hh-qyT" firstAttribute="leading" secondItem="Hf2-BU-4Kq" secondAttribute="trailing" constant="8" id="X9G-oM-VdO"/>
+                            <constraint firstItem="xNB-dB-yrt" firstAttribute="top" secondItem="Ivo-Hh-qyT" secondAttribute="bottom" constant="8" id="Ziy-by-P1l"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fQF-8a-kfe" secondAttribute="bottom" constant="8" id="gIY-oo-LHM"/>
+                            <constraint firstItem="Hf2-BU-4Kq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="iXa-g9-8hT"/>
+                            <constraint firstItem="Hf2-BU-4Kq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jZs-yk-ld0"/>
+                            <constraint firstItem="xNB-dB-yrt" firstAttribute="height" secondItem="Hf2-BU-4Kq" secondAttribute="height" id="lkf-cd-AgX"/>
+                            <constraint firstItem="fQF-8a-kfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="nUc-s0-LuF"/>
+                            <constraint firstItem="Ivo-Hh-qyT" firstAttribute="width" secondItem="Hf2-BU-4Kq" secondAttribute="width" id="uLK-hL-lzg"/>
+                            <constraint firstItem="fQF-8a-kfe" firstAttribute="height" secondItem="Hf2-BU-4Kq" secondAttribute="height" id="wPK-ie-Qtk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
